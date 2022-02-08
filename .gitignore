@@ -1,0 +1,16 @@
+node_modules
+out/
+
+front/dist/*.js
+front/dist/*.js.map
+
+target/
+back/.cargo/
+back/workdir/acorn.happ
+back/workdir/profiles.dna
+back/workdir/projects.dna
+.hc
+databases
+
+**/.DS_Store
+.DS_Store
