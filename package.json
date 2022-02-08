@@ -1,0 +1,22 @@
+{
+  "name": "acorn",
+  "version": "1.0.0",
+  "description": "Acorn is software that helps people create the future",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h-be/acorn.git"
+  },
+  "scripts": {
+    "dna-install-deps": ". scripts/install-hc-tools.sh",
+    "dna-test": ". scripts/test-dna.sh",
+    "dna-pack": ". scripts/pack-dna.sh",
+    "web-install": "cd web && npm install",
+    "web": "cd web && npx webpack-dev-server --config webpack.dev.js",
+    "web-build": "cd web && npx webpack --config webpack.prod.js",
+    "install-electron": "cd electron && npm install",
+    "electron": "cd electron && npm run start",
+    "build": ". scripts/build.sh"
+  },
+  "author": "Connor Turland <connor@sprillow.com>",
+  "license": "CAL-1.0"
+}
