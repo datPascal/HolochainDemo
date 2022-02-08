@@ -1,0 +1,31 @@
+{
+  "name": "acorn2",
+  "version": "1.0.0",
+  "description": "Acorn is software that helps people create the future",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h-be/acorn2.git"
+  },
+  "scripts": {
+    "install-holochain": ". back/scripts/install-binaries.sh",
+    "test-happ": ". back/scripts/test-happ.sh",
+    "pack-happ": ". back/scripts/pack-happ.sh",
+    "install-happ": ". back/scripts/install-happ.sh",
+    "install-happ-2": ". back/scripts/2-install-happ.sh",
+    "run-happ": "holochain -c back/conductor-config.yml",
+    "run-happ-2": "holochain -c back/2-conductor-config.yml",
+    "install-ui": "cd front && npm install",
+    "run-ui": "cd front && npx webpack-dev-server --config webpack.dev.js",
+    "build-ui": "cd front && npx webpack --config webpack.prod.js"
+  },
+  "author": "Connor Turland <connor@sprillow.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.2.1"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "github:",
+    "@tauri-apps/cli": "^1.0.0-beta-rc.4"
+  }
+}
