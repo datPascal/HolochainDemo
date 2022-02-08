@@ -1,0 +1,26 @@
+[package]
+name = "profiles"
+version = "0.0.1"
+edition = "2018"
+
+[lib]
+name = "profiles"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+hdk_crud = { version = "0.0.13" }
+hdk = { version = "0.0.101" }
+paste = "*"
+serde = "*"
+thiserror = "1"
+mockall = "0.9"
+
+[dev-dependencies]
+fixt = "0.0.3"
+holochain_types = "0.0.1"
+rand = "0.7"
+strum = "0.18.0"
+strum_macros = "0.18.0"
+
+[features]
+mock = ["hdk/mock", "hdk/test_utils", "hdk_crud/test_utils"]
