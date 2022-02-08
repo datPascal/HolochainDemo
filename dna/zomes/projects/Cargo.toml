@@ -1,0 +1,22 @@
+[package]
+name = "projects"
+version = "0.0.1"
+edition = "2018"
+
+[lib]
+name = "projects"
+crate-type = [ "cdylib", "rlib" ]
+
+[dependencies]
+hdk_crud = "0.0.103"
+hdk = "0.0.103"
+paste = "*"
+# use whatever serde hdk uses
+serde = "*"
+thiserror = "1"
+
+[profile.dev]
+opt-level = "z"
+
+[profile.release]
+opt-level = "z"
